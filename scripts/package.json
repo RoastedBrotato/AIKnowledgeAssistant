@@ -1,0 +1,8 @@
+{
+  "name": "knowledgeos-scripts",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "docx": "^9.1.1"
+  }
+}

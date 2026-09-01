@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+node_modules/
+.next/
+out/
+dist/
+*.log
+.DS_Store
+storage/uploads/
+*.tsbuildinfo
+.claude/
