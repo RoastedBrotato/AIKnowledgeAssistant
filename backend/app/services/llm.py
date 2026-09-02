@@ -2,7 +2,7 @@ from openai import OpenAI
 
 from app.config import settings
 
-_client = OpenAI(api_key=settings.openai_api_key)
+_client = OpenAI(api_key=settings.openai_api_key, base_url=settings.openai_base_url or None)
 
 BASE_INSTRUCTIONS = """You are a company knowledge assistant. Answer the user's question using ONLY the numbered
 source excerpts provided below. Cite the sources you used inline like [1], [2].

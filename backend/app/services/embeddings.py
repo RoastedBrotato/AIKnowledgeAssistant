@@ -2,7 +2,7 @@ from openai import OpenAI
 
 from app.config import settings
 
-_client = OpenAI(api_key=settings.openai_api_key)
+_client = OpenAI(api_key=settings.openai_api_key, base_url=settings.openai_base_url or None)
 
 
 def embed_texts(texts: list[str]) -> list[list[float]]:
